@@ -23,7 +23,7 @@ B <- if(MODE=='production') 500L else 30L
 # uses only the distribution conditional on exceeding d.
 sample_sizes <- c(50L,100L,500L)
 x0 <- 1000; d <- 4000; u <- 14000
-mu_true <- 5; sigma_true <- 2
+mu_true <- 6; sigma_true <- sqrt(2)
 # Risk settings: beta is the upper-tail probability for VaR/CTE and the GS
 # formula; delta shapes GS, r shapes the proportional hazards transform (PHT),
 # and lambda is the Wang transform (WT) normal-quantile shift.
